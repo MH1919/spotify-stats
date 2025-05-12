@@ -116,29 +116,30 @@ const Home: React.FC = () => {
                 Connect with Spotify to explore your listening habits, discover your top tracks and artists, and share your musical journey with friends.
               </Text>
               {!isAuthenticated && (
-                <Button
-                  size="lg"
-                  colorScheme="green"
-                  onClick={login}
-                  leftIcon={<Image src="/spotify-icon.png" boxSize="24px" alt="Spotify" />}
-                  px={10}
-                  fontSize="xl"
-                  fontWeight="bold"
-                  shadow="2xl"
-                  _hover={{
-                    boxShadow: '0 0 0 4px #1DB95455',
-                    transform: 'scale(1.04)',
-                    bg: 'green.500'
-                  }}
-                  _active={{
-                    transform: 'scale(0.98)',
-                    bg: 'green.600'
-                  }}
-                  transition="all 0.2s"
-                  mb={2}
-                >
-                  Connect with Spotify
-                </Button>
+                <Center w="full">
+                  <Button
+                    size="lg"
+                    colorScheme="green"
+                    onClick={login}
+                    px={10}
+                    fontSize="xl"
+                    fontWeight="bold"
+                    shadow="2xl"
+                    _hover={{
+                      boxShadow: '0 0 0 4px #1DB95455',
+                      transform: 'scale(1.04)',
+                      bg: 'green.500'
+                    }}
+                    _active={{
+                      transform: 'scale(0.98)',
+                      bg: 'green.600'
+                    }}
+                    transition="all 0.2s"
+                    mb={2}
+                  >
+                    Connect with Spotify
+                  </Button>
+                </Center>
               )}
             </>
           </Fade>
